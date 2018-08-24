@@ -1,0 +1,22 @@
+{
+  "name": "noah-tool",
+  "version": "1.0.0",
+  "description": "Work faster!",
+  "main": "index.js",
+  "repository": "http://swcodeserver.infortrend.com/noah.chou/noah-tool.git",
+  "author": "Noah Chou",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bin/www",
+    "release": "pkg . --targets node6-win-x64 --output ./dist/nt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "./app/app.js",
+  "pkg": {
+    "script": "app/**/*.js"
+  },
+  "dependencies": {
+    "pkg": "^4.3.4"
+  },
+  "devDependencies": {}
+}
